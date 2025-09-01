@@ -10,6 +10,8 @@ from gluestick import batch_to_np, numpy_image_to_torch, GLUESTICK_ROOT
 from .drawing import plot_images, plot_lines, plot_color_line_matches, plot_keypoints, plot_matches
 from .models.two_view_pipeline import TwoViewPipeline
 
+import matplotlib
+matplotlib.use('TkAgg')
 
 def main():
     # Parse input parameters
